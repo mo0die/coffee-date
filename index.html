@@ -134,8 +134,8 @@
       function handleAltSubmit(e) {
         e.preventDefault();
         if (!altMessage.trim()) return;
-        setAnswer('Yes but not Hollys');
-        inputRef.current.value = 'Yes but not Hollys';
+        setAnswer('Yes but not Hollys or the 22nd of March');
+        inputRef.current.value = 'Yes but not Hollys or the 22nd of March';
         msgRef.current.value = altMessage;
         formRef.current.submit();
       }
@@ -282,7 +282,7 @@
               <div className="text-center bounce">
                 <div className="inline-block bg-pop-yellow nb-border rounded-2xl nb-shadow p-5">
                   <p className="font-heading font-bold text-ink text-xl">
-                    {answer === 'Yes' ? 'See you there!' : answer === 'No' ? 'No worries!' : 'Got it, see you somewhere else!'}
+                    {answer === 'Yes' ? 'See you there!' : answer === 'No' ? 'No worries!' : 'Got it, see you there!'}
                   </p>
                 </div>
               </div>
